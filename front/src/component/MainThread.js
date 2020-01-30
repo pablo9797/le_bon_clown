@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import PostCard from './PostCard';
 import '../App.css';
+import TittleTop from './TittleTop'
 
 
 class MainThread extends React.Component{
@@ -31,8 +32,13 @@ class MainThread extends React.Component{
     render(){
 
         return(
-            <div className='mainThread'>
-                {this.getTabContent()}
+            <div>
+                <TittleTop/>
+                <div className='mainThread'>
+                    <div className="annonce">
+                        {this.getTabContent()}
+                    </div>
+                </div>
             </div>
         )
     }

@@ -46,3 +46,19 @@ INSERT INTO `post`
 (`user_id`, `title`, `category`, `content`,`profile_pic`,`price`) 
 VALUES
 (1, ' equilibre', 'Jongleur', "jongleur manchot cherche stage en cirque ou hopital","https://sceno.fr/media/image/?w=900&q=75&type=jpg&f=81878&action=best&ft=.jpg",'45');
+INSERT INTO `post`
+(`user_id`, `title`, `category`, `content`,`profile_pic`,`price`) 
+VALUES
+(1, 'Vous n y croierez pas', 'Magicien', "La magie existe et je vais vous le prouver!!!! Donnez moi ma chance Abracadabra","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGlOXIfFBEmrq5PehdTiLsWXgGVcXgtjoSXEwk-N4gjoLzb4eY&s",'1000');
+INSERT INTO `post`
+(`user_id`, `title`, `category`, `content`,`profile_pic`,`price`) 
+VALUES
+(1, ' oracle outragent', 'Troubadour', "Hallo...Win? et farendolle de sérénades", "https://images-na.ssl-images-amazon.com/images/I/61DuzL0GQ%2BL._AC_SY355_.jpg",'105');
+INSERT INTO `post`
+(`user_id`, `title`, `category`, `content`,`profile_pic`,`price`) 
+VALUES
+(1, 'C est moi KIRI', 'Clown', "tarte a la creme ou a la pasteque sortez les serpentin j arrive...","https://static.actu.fr/uploads/2017/10/Clown-terrifiant-854x480.jpg",'3');
+INSERT INTO `post`
+(`user_id`, `title`, `category`, `content`,`profile_pic`,`price`) 
+VALUES
+(1, ' equilibre', 'Jongleur', "jongleur manchot cherche stage en cirque ou hopital","https://sceno.fr/media/image/?w=900&q=75&type=jpg&f=81878&action=best&ft=.jpg",'45');

@@ -8,7 +8,7 @@
   height: 15vh;
   font-size: 10px;
   margin:2% ;
-  box-shadow: 3px 10px 50px;
+  box-shadow: 5px 5px 20px;
 }
 .image{
   display: flex;
@@ -45,4 +45,45 @@
 .mainThread{
   background-color: rgb(206, 199, 199);
   height: 100vh;
+}
+.annonce{
+  margin-top: 11vh;
+}
+.tittleTop{
+  display: flex;
+  height: 10vh;
+  width: 100vw;
+  background-color: white;
+  position: fixed;
+  margin-top: -11vh;
+  box-shadow: 5px 5px 20px;
+
+
+}
+.menuLogo{
+  display: flex;
+  justify-content: center;
+  max-width:25% ;
+  max-height: 100%;
+  background-color: white;
+}
+.menuLogo img{
+  max-width: 60%;
+  max-height: 100%;
+}
+.tittle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  background-color: white;
+  
+}
+.tittle p{
+  color:rgb(245, 93, 6);
+  font-size:24px ;
+}
+.logo img{
+  max-height: 100%;
+  max-width: 100%;
 }
