@@ -15,6 +15,8 @@ app.use(
 	}),
 );
 
+app.use(cors());
+
 app.get('/posts', (req, res) => {
 	// const userId = req.authData.sub
 	const sqlQuery = 'SELECT * FROM post'
@@ -28,12 +30,12 @@ app.get('/posts', (req, res) => {
   });
 });
 
-app.post('/posts',  (req, res) => {
+app.post('/posts', (req, res) => {
     const formData = {
-      user_id: req.body.user_id,
+      user_id: req.sub,
       title: req.body.title,
       category: req.body.category,
-      content: req.body.content
+      content: req.body.content,
   }
   const sqlQuery = 'INSERT INTO post SET ?';
     connection.query(sqlQuery, formData, (err, results) => {

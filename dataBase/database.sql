@@ -19,16 +19,30 @@ create table post
     user_id int,
     created_at timestamp default CURRENT_TIMESTAMP,
     title varchar(30) not null,
-    category enum('Cours','Logements','Fournitures','Jobs','Events'),
+    category enum ('Magicien','Clown','Jongleur','Illusionniste','Troubadour'),
     content varchar(300) not null,
-    event_date datetime,
+    profile_pic varchar (500),
+    price varchar(10),
     FOREIGN KEY (user_id) REFERENCES user(id)
 );
+
 INSERT INTO `user`
 (`firstname`, `lastname`, `password`, `email`, `bio`, `profile_pic`, `city`) 
 VALUES
 ('Youri', 'Ligotmi', 'pouet', 'yligotmi@msn.com', 'Je voudrais instaurer un nouvel ordre mondial', 'https://randomuser.me/api/portraits/men/43.jpg', 'Angers');
 INSERT INTO `post`
-(`user_id`, `title`, `category`, `content`) 
+(`user_id`, `title`, `category`, `content`,`profile_pic`,`price`) 
 VALUES
-(1, 'Recherche appartement', 'Logements', "Bonjour amis dipsers, je suis actuellement à la recherche d'un appartement dans la région de Marseille, si possible pret du vieux port pour contempler la vue et respirer le vent salé. Contactez moi si vous avez des pistes, merci à tous");
+(1, 'Vous n y croierez pas', 'Magicien', "La magie existe et je vais vous le prouver!!!! Donnez moi ma chance Abracadabra","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGlOXIfFBEmrq5PehdTiLsWXgGVcXgtjoSXEwk-N4gjoLzb4eY&s",'1000');
+INSERT INTO `post`
+(`user_id`, `title`, `category`, `content`,`profile_pic`,`price`) 
+VALUES
+(1, ' oracle outragent', 'Troubadour', "Hallo...Win? et farendolle de sérénades", "https://images-na.ssl-images-amazon.com/images/I/61DuzL0GQ%2BL._AC_SY355_.jpg",'105');
+INSERT INTO `post`
+(`user_id`, `title`, `category`, `content`,`profile_pic`,`price`) 
+VALUES
+(1, 'C est moi KIRI', 'Clown', "tarte a la creme ou a la pasteque sortez les serpentin j arrive...","https://static.actu.fr/uploads/2017/10/Clown-terrifiant-854x480.jpg",'3');
+INSERT INTO `post`
+(`user_id`, `title`, `category`, `content`,`profile_pic`,`price`) 
+VALUES
+(1, ' equilibre', 'Jongleur', "jongleur manchot cherche stage en cirque ou hopital","https://sceno.fr/media/image/?w=900&q=75&type=jpg&f=81878&action=best&ft=.jpg",'45');
