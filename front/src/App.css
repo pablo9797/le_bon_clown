@@ -37,6 +37,7 @@
 .title{
   font-size: larger;
   margin-bottom: 1vh;
+  width: 65vw;
 
 }
 .content{
@@ -45,6 +46,13 @@
 .mainThread{
   background-color: rgb(206, 199, 199);
   height: 100vh;
+
+}
+.notMainthread{
+  background-color: rgb(206, 199, 199);
+  height: 100vh;
+  opacity:0;
+ 
 }
 .annonce{
   margin-top: 11vh;
@@ -53,8 +61,10 @@
   display: flex;
   height: 10vh;
   width: 100vw;
+  justify-content: space-between;
+  text-align: center;
   background-color: white;
-  position: fixed;
+  position:fixed;
   margin-top: -11vh;
   box-shadow: 5px 5px 20px;
 
@@ -63,7 +73,7 @@
 .menuLogo{
   display: flex;
   justify-content: center;
-  max-width:25% ;
+  width: 20vw;
   max-height: 100%;
   background-color: white;
 }
@@ -71,19 +81,48 @@
   max-width: 60%;
   max-height: 100%;
 }
+
 .tittle{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 55%;
-  background-color: white;
-  
+  width: 60vw;
+  background-color: white; 
 }
 .tittle p{
   color:rgb(245, 93, 6);
   font-size:24px ;
+  
+}
+.logo {
+  width: 20vw;
 }
 .logo img{
-  max-height: 100%;
   max-width: 100%;
+  max-height: 100%;
+}
+.menu{
+  position:  fixed;
+  width: 100vw;
+  height: 90vh;
+  background-color: red;
+  transition-duration: 1.5s;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 26px;
+}
+#specialites{
+  background-color: yellow;
+  width: 75vw;
+  border: 3px solid black;
+  padding: 0.5em;
+  border-radius: 0 50% 50% 0 ;
+}
+.invisibleMenu{
+	margin-left: -100%;
+  opacity: 0;
+  margin-right: 100vw;
+  position: absolute;
 }

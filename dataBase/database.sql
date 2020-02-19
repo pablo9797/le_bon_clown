@@ -19,7 +19,7 @@ create table post
     user_id int,
     created_at timestamp default CURRENT_TIMESTAMP,
     title varchar(30) not null,
-    category enum ('Magicien','Clown','Jongleur','Illusionniste','Troubadour'),
+    category enum ('Magicien','Clown','Jongleur','Illusioniste','Troubadour'),
     content varchar(300) not null,
     profile_pic varchar (500),
     price varchar(10),
@@ -62,3 +62,11 @@ INSERT INTO `post`
 (`user_id`, `title`, `category`, `content`,`profile_pic`,`price`) 
 VALUES
 (1, ' equilibre', 'Jongleur', "jongleur manchot cherche stage en cirque ou hopital","https://sceno.fr/media/image/?w=900&q=75&type=jpg&f=81878&action=best&ft=.jpg",'45');
+INSERT INTO `post`
+(`user_id`, `title`, `category`, `content`,`profile_pic`,`price`) 
+VALUES
+(1, 'C est moi KIRI', 'Illusioniste', "disparition!!!!","https://static.actu.fr/uploads/2017/10/Clown-terrifiant-854x480.jpg",'40');
+INSERT INTO `post`
+(`user_id`, `title`, `category`, `content`,`profile_pic`,`price`) 
+VALUES
+(1, ' equilibre', 'Illusioniste', "je ne suis pas un magicien","https://sceno.fr/media/image/?w=900&q=75&type=jpg&f=81878&action=best&ft=.jpg",'700');

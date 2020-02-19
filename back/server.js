@@ -19,7 +19,7 @@ app.use(cors());
 
 app.get('/posts', (req, res) => {
 	// const userId = req.authData.sub
-	const sqlQuery = 'SELECT * FROM post'
+	const sqlQuery = 'SELECT post.*, user.profile_pic from post left join user on user.id = post.user_id'
 	connection.query(sqlQuery, (err, results) => {
     if (err) {
 		console.log(err)
