@@ -36,6 +36,7 @@ app.post('/posts', (req, res) => {
       title: req.body.title,
       category: req.body.category,
       content: req.body.content,
+      price: req.body.price,
   }
   const sqlQuery = 'INSERT INTO post SET ?';
     connection.query(sqlQuery, formData, (err, results) => {

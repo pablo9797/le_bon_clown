@@ -8,27 +8,41 @@ class App extends React.Component {
     super(props);
     this.state={
         menuVisible:false,
+        postModaleVisible:false,
     }
 
     this.isMenuVisible=this.isMenuVisible.bind(this);
+    this.isPostModaleVisible = this.isPostModaleVisible.bind(this);
 
     }
 
     isMenuVisible(){
+      this.setState(prevState=>{
+        return{postModaleVisible:false}})
       this.setState(prevState=> {
           return {menuVisible:!prevState.menuVisible}})
   }
+
+    isPostModaleVisible(){
+      this.setState(prevState=>{
+        return {menuVisible:false}})
+      this.setState(prevState=>{
+        return{postModaleVisible:!prevState.postModaleVisible}})
+    }
   
   render(){
 
   return (
     <div className="App">
       <TittleTop
-      isMenuVisible={this.isMenuVisible}/>
+      isMenuVisible={this.isMenuVisible}
+      isPostModaleVisible={this.isPostModaleVisible}/>
 
       <MainThread
       isMenuVisible={this.isMenuVisible}
-      menuVisible={this.state.menuVisible}/>
+      menuVisible={this.state.menuVisible}
+      isPostModaleVisible={this.isPostModaleVisible}
+      postModaleVisible={this.state.postModaleVisible}/>
     </div>
   );
 }

@@ -12,7 +12,7 @@ function TittleTop(props){
             <div className='tittle'>
                 <p>LE BON CLOWN</p>
             </div>
-            <div className='logo'>
+            <div className='logo' onClick={props.isPostModaleVisible}>
                <img  src='https://t3.ftcdn.net/jpg/00/54/27/16/240_F_54271693_Gxro4zHXwGoosrGtJkuJTuiUpEhBN8WU.jpg'/>
             </div>
 

@@ -3,6 +3,7 @@ import axios from 'axios';
 import PostCard from './PostCard';
 import '../App.css';
 import Menu from './Menu';
+import PostModale from './PostModale';
 
 
 class MainThread extends React.Component{
@@ -81,7 +82,11 @@ class MainThread extends React.Component{
     render(){
 
         return(
-            <div>    
+            <div> 
+
+                <PostModale
+                postModaleVisible={this.props.postModaleVisible}
+                isPostModaleVisible={this.props.isPostModaleVisible}/>   
                 <Menu
                 isMenuVisible={this.props.isMenuVisible}
                 menuVisible={this.props.menuVisible}

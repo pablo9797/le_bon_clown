@@ -106,7 +106,7 @@
   width: 100vw;
   height: 90vh;
   background-color: red;
-  transition-duration: 1.5s;
+  transition-duration: 0.5s;
   opacity: 1;
   display: flex;
   flex-direction: column;
@@ -126,3 +126,56 @@
   margin-right: 100vw;
   position: absolute;
 }
+
+/*******************postModale debut********************************************************/
+.postModale{
+  position:  fixed;
+  width: 100vw;
+  height: 90vh;
+  background-color: red;
+  transition-duration: 0.5s;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+.noPostModale{
+  margin-right: -100%;
+  opacity: 0;
+  margin-left: 100vw;
+  position: absolute;
+}
+.entete{
+  text-align: center;
+  margin-top: 1em;
+  font-size: x-large;
+  height: 10%;
+
+}
+.postContent{
+height: 75%;
+display:flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+.categorys {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: large;
+ justify-content: space-between;
+  height: 40%;
+}
+.content{
+  width: 90%;
+}
+#postTexte{
+  width: 100%;
+  height: 100%;
+}
+
+
+/*******************postModale fin********************************************************/
